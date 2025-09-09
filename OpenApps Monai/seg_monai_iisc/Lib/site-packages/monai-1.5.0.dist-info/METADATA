@@ -1,0 +1,257 @@
+Metadata-Version: 2.1
+Name: monai
+Version: 1.5.0
+Summary: AI Toolkit for Healthcare Imaging
+Home-page: https://monai.io/
+Author: MONAI Consortium
+Author-email: monai.contact@gmail.com
+License: Apache License 2.0
+Project-URL: Documentation, https://docs.monai.io/
+Project-URL: Bug Tracker, https://github.com/Project-MONAI/MONAI/issues
+Project-URL: Source Code, https://github.com/Project-MONAI/MONAI
+Platform: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: numpy<3.0,>=1.24
+Requires-Dist: torch<2.7.0,>=2.4.1
+Provides-Extra: all
+Requires-Dist: clearml>=1.10.0rc0; extra == "all"
+Requires-Dist: einops; extra == "all"
+Requires-Dist: fire; extra == "all"
+Requires-Dist: gdown>=4.7.3; extra == "all"
+Requires-Dist: h5py; extra == "all"
+Requires-Dist: huggingface-hub; extra == "all"
+Requires-Dist: itk>=5.2; extra == "all"
+Requires-Dist: jsonschema; extra == "all"
+Requires-Dist: lmdb; extra == "all"
+Requires-Dist: lpips==0.1.4; extra == "all"
+Requires-Dist: matplotlib>=3.6.3; extra == "all"
+Requires-Dist: mlflow>=2.12.2; extra == "all"
+Requires-Dist: nibabel; extra == "all"
+Requires-Dist: ninja; extra == "all"
+Requires-Dist: nvidia-ml-py; extra == "all"
+Requires-Dist: onnx>=1.13.0; extra == "all"
+Requires-Dist: openslide-bin; extra == "all"
+Requires-Dist: openslide-python; extra == "all"
+Requires-Dist: optuna; extra == "all"
+Requires-Dist: pandas; extra == "all"
+Requires-Dist: pillow; extra == "all"
+Requires-Dist: psutil; extra == "all"
+Requires-Dist: pyamg>=5.0.0; extra == "all"
+Requires-Dist: pydicom; extra == "all"
+Requires-Dist: pynrrd; extra == "all"
+Requires-Dist: pytorch-ignite==0.4.11; extra == "all"
+Requires-Dist: pyyaml; extra == "all"
+Requires-Dist: scikit-image>=0.14.2; extra == "all"
+Requires-Dist: tensorboard; extra == "all"
+Requires-Dist: tensorboardX; extra == "all"
+Requires-Dist: torchio; extra == "all"
+Requires-Dist: torchvision; extra == "all"
+Requires-Dist: tqdm>=4.47.0; extra == "all"
+Requires-Dist: zarr; extra == "all"
+Requires-Dist: nni; (platform_system == "Linux" and "arm" not in platform_machine and "aarch" not in platform_machine) and extra == "all"
+Requires-Dist: cucim-cu12; (platform_system == "Linux" and python_version >= "3.9" and python_version <= "3.10") and extra == "all"
+Requires-Dist: imagecodecs; (platform_system == "Linux" or platform_system == "Darwin") and extra == "all"
+Requires-Dist: tifffile; (platform_system == "Linux" or platform_system == "Darwin") and extra == "all"
+Requires-Dist: onnxruntime; python_version <= "3.10" and extra == "all"
+Requires-Dist: transformers<4.41.0,>=4.36.0; python_version <= "3.10" and extra == "all"
+Requires-Dist: scipy>=1.12.0; python_version >= "3.9" and extra == "all"
+Provides-Extra: clearml
+Requires-Dist: clearml; extra == "clearml"
+Provides-Extra: cucim
+Requires-Dist: cucim-cu12; (platform_system == "Linux" and python_version >= "3.9" and python_version <= "3.10") and extra == "cucim"
+Provides-Extra: einops
+Requires-Dist: einops; extra == "einops"
+Provides-Extra: fire
+Requires-Dist: fire; extra == "fire"
+Provides-Extra: gdown
+Requires-Dist: gdown>=4.7.3; extra == "gdown"
+Provides-Extra: h5py
+Requires-Dist: h5py; extra == "h5py"
+Provides-Extra: huggingface_hub
+Requires-Dist: huggingface-hub; extra == "huggingface-hub"
+Provides-Extra: ignite
+Requires-Dist: pytorch-ignite==0.4.11; extra == "ignite"
+Provides-Extra: imagecodecs
+Requires-Dist: imagecodecs; (platform_system == "Linux" or platform_system == "Darwin") and extra == "imagecodecs"
+Provides-Extra: itk
+Requires-Dist: itk>=5.2; extra == "itk"
+Provides-Extra: jsonschema
+Requires-Dist: jsonschema; extra == "jsonschema"
+Provides-Extra: lmdb
+Requires-Dist: lmdb; extra == "lmdb"
+Provides-Extra: lpips
+Requires-Dist: lpips==0.1.4; extra == "lpips"
+Provides-Extra: matplotlib
+Requires-Dist: matplotlib>=3.6.3; extra == "matplotlib"
+Provides-Extra: mlflow
+Requires-Dist: mlflow>=2.12.2; extra == "mlflow"
+Provides-Extra: nibabel
+Requires-Dist: nibabel; extra == "nibabel"
+Provides-Extra: ninja
+Requires-Dist: ninja; extra == "ninja"
+Provides-Extra: nni
+Requires-Dist: nni; (platform_system == "Linux" and "arm" not in platform_machine and "aarch" not in platform_machine) and extra == "nni"
+Provides-Extra: onnx
+Requires-Dist: onnx>=1.13.0; extra == "onnx"
+Requires-Dist: onnxruntime; python_version <= "3.10" and extra == "onnx"
+Provides-Extra: openslide
+Requires-Dist: openslide-bin; extra == "openslide"
+Requires-Dist: openslide-python; extra == "openslide"
+Provides-Extra: optuna
+Requires-Dist: optuna; extra == "optuna"
+Provides-Extra: packaging
+Requires-Dist: packaging; extra == "packaging"
+Provides-Extra: pandas
+Requires-Dist: pandas; extra == "pandas"
+Provides-Extra: pillow
+Requires-Dist: pillow!=8.3.0; extra == "pillow"
+Provides-Extra: polygraphy
+Requires-Dist: polygraphy; extra == "polygraphy"
+Provides-Extra: psutil
+Requires-Dist: psutil; extra == "psutil"
+Provides-Extra: pyamg
+Requires-Dist: pyamg>=5.0.0; extra == "pyamg"
+Provides-Extra: pydicom
+Requires-Dist: pydicom; extra == "pydicom"
+Provides-Extra: pynrrd
+Requires-Dist: pynrrd; extra == "pynrrd"
+Provides-Extra: pynvml
+Requires-Dist: nvidia-ml-py; extra == "pynvml"
+Provides-Extra: pyyaml
+Requires-Dist: pyyaml; extra == "pyyaml"
+Provides-Extra: scipy
+Requires-Dist: scipy>=1.12.0; python_version >= "3.9" and extra == "scipy"
+Provides-Extra: skimage
+Requires-Dist: scikit-image>=0.14.2; extra == "skimage"
+Provides-Extra: tensorboard
+Requires-Dist: tensorboard; extra == "tensorboard"
+Provides-Extra: tensorboardx
+Requires-Dist: tensorboardX; extra == "tensorboardx"
+Provides-Extra: tifffile
+Requires-Dist: tifffile; (platform_system == "Linux" or platform_system == "Darwin") and extra == "tifffile"
+Provides-Extra: torchio
+Requires-Dist: torchio; extra == "torchio"
+Provides-Extra: torchvision
+Requires-Dist: torchvision; extra == "torchvision"
+Provides-Extra: tqdm
+Requires-Dist: tqdm>=4.47.0; extra == "tqdm"
+Provides-Extra: transformers
+Requires-Dist: transformers<4.41.0,>=4.36.0; python_version <= "3.10" and extra == "transformers"
+Provides-Extra: zarr
+Requires-Dist: zarr; extra == "zarr"
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/docs/images/MONAI-logo-color.png" width="50%" alt='project-monai'>
+</p>
+
+**M**edical **O**pen **N**etwork for **AI**
+
+![Supported Python versions](https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/docs/images/python.svg)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)](https://opensource.org/licenses/Apache-2.0)
+[![PyPI version](https://badge.fury.io/py/monai.svg)](https://badge.fury.io/py/monai)
+[![docker](https://img.shields.io/badge/docker-pull-green.svg?logo=docker&logoColor=white)](https://hub.docker.com/r/projectmonai/monai)
+[![conda](https://img.shields.io/conda/vn/conda-forge/monai?color=green)](https://anaconda.org/conda-forge/monai)
+
+[![premerge](https://github.com/Project-MONAI/MONAI/actions/workflows/pythonapp.yml/badge.svg?branch=dev)](https://github.com/Project-MONAI/MONAI/actions/workflows/pythonapp.yml)
+[![postmerge](https://img.shields.io/github/checks-status/project-monai/monai/dev?label=postmerge)](https://github.com/Project-MONAI/MONAI/actions?query=branch%3Adev)
+[![Documentation Status](https://readthedocs.org/projects/monai/badge/?version=latest)](https://docs.monai.io/en/latest/)
+[![codecov](https://codecov.io/gh/Project-MONAI/MONAI/branch/dev/graph/badge.svg?token=6FTC7U1JJ4)](https://codecov.io/gh/Project-MONAI/MONAI)
+[![monai Downloads Last Month](https://assets.piptrends.com/get-last-month-downloads-badge/monai.svg 'monai Downloads Last Month by pip Trends')](https://piptrends.com/package/monai)
+
+MONAI is a [PyTorch](https://pytorch.org/)-based, [open-source](https://github.com/Project-MONAI/MONAI/blob/dev/LICENSE) framework for deep learning in healthcare imaging, part of the [PyTorch Ecosystem](https://pytorch.org/ecosystem/).
+Its ambitions are as follows:
+
+- Developing a community of academic, industrial and clinical researchers collaborating on a common foundation;
+- Creating state-of-the-art, end-to-end training workflows for healthcare imaging;
+- Providing researchers with the optimized and standardized way to create and evaluate deep learning models.
+
+## Features
+
+> _Please see [the technical highlights](https://docs.monai.io/en/latest/highlights.html) and [What's New](https://docs.monai.io/en/latest/whatsnew.html) of the milestone releases._
+
+- flexible pre-processing for multi-dimensional medical imaging data;
+- compositional & portable APIs for ease of integration in existing workflows;
+- domain-specific implementations for networks, losses, evaluation metrics and more;
+- customizable design for varying user expertise;
+- multi-GPU multi-node data parallelism support.
+
+## Requirements
+
+MONAI works with the [currently supported versions of Python](https://devguide.python.org/versions), and depends directly on NumPy and PyTorch with many optional dependencies.
+
+* Major releases of MONAI will have dependency versions stated for them. The current state of the `dev` branch in this repository is the unreleased development version of MONAI which typically will support current versions of dependencies and include updates and bug fixes to do so.
+* PyTorch support covers [the current version](https://github.com/pytorch/pytorch/releases) plus three previous minor versions. If compatibility issues with a PyTorch version and other dependencies arise, support for a version may be delayed until a major release.
+* Our support policy for other dependencies adheres for the most part to [SPEC0](https://scientific-python.org/specs/spec-0000), where dependency versions are supported where possible for up to two years. Discovered vulnerabilities or defects may require certain versions to be explicitly not supported.
+* See the `requirements*.txt` files for dependency version information.
+
+## Installation
+
+To install [the current release](https://pypi.org/project/monai/), you can simply run:
+
+```bash
+pip install monai
+```
+
+Please refer to [the installation guide](https://docs.monai.io/en/latest/installation.html) for other installation options.
+
+## Getting Started
+
+[MedNIST demo](https://colab.research.google.com/github/Project-MONAI/tutorials/blob/main/2d_classification/mednist_tutorial.ipynb) and [MONAI for PyTorch Users](https://colab.research.google.com/github/Project-MONAI/tutorials/blob/main/modules/developer_guide.ipynb) are available on Colab.
+
+Examples and notebook tutorials are located at [Project-MONAI/tutorials](https://github.com/Project-MONAI/tutorials).
+
+Technical documentation is available at [docs.monai.io](https://docs.monai.io).
+
+## Citation
+
+If you have used MONAI in your research, please cite us! The citation can be exported from: <https://arxiv.org/abs/2211.02701>.
+
+## Model Zoo
+
+[The MONAI Model Zoo](https://github.com/Project-MONAI/model-zoo) is a place for researchers and data scientists to share the latest and great models from the community.
+Utilizing [the MONAI Bundle format](https://docs.monai.io/en/latest/bundle_intro.html) makes it easy to [get started](https://github.com/Project-MONAI/tutorials/tree/main/model_zoo) building workflows with MONAI.
+
+## Contributing
+
+For guidance on making a contribution to MONAI, see the [contributing guidelines](https://github.com/Project-MONAI/MONAI/blob/dev/CONTRIBUTING.md).
+
+## Community
+
+Join the conversation on Twitter/X [@ProjectMONAI](https://twitter.com/ProjectMONAI), [LinkedIn](https://www.linkedin.com/company/projectmonai), or join our [Slack channel](https://forms.gle/QTxJq3hFictp31UM9).
+
+Ask and answer questions over on [MONAI's GitHub Discussions tab](https://github.com/Project-MONAI/MONAI/discussions).
+
+## Links
+
+- Website: <https://monai.io/>
+- API documentation (milestone): <https://docs.monai.io/>
+- API documentation (latest dev): <https://docs.monai.io/en/latest/>
+- Code: <https://github.com/Project-MONAI/MONAI>
+- Project tracker: <https://github.com/Project-MONAI/MONAI/projects>
+- Issue tracker: <https://github.com/Project-MONAI/MONAI/issues>
+- Wiki: <https://github.com/Project-MONAI/MONAI/wiki>
+- Test status: <https://github.com/Project-MONAI/MONAI/actions>
+- PyPI package: <https://pypi.org/project/monai/>
+- conda-forge: <https://anaconda.org/conda-forge/monai>
+- Weekly previews: <https://pypi.org/project/monai-weekly/>
+- Docker Hub: <https://hub.docker.com/r/projectmonai/monai>
+
+
