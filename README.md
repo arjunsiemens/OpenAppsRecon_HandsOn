@@ -62,3 +62,9 @@
 6. Open the nparray-call.py file in your Python IDE and execute it. For instructions on how to execute, refer to the instructions provided at https://github.com/OpenAppsRecon/demo.
 
 7. Once you have a working Python code (i.e., the modified recon_nparray.py), you can hand it over to anyone from Siemens team for integration and performance testing on open recon platform.
+
+### <a name='Exercise3'></a>Exercise 3: Using MONAI 3DSegResNet Model for segmentation on either given or user data.
+
+1. Run this command ["python.exe main.py -i data -o outputFolder -c configFolder"] to generate outputs via main.py.
+2. Update the main.py file a/c to your requirements.
+3. Give the data in proper DICOM format.
