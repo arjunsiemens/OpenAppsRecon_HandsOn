@@ -5,52 +5,8 @@
 **[Exercise 2: Integrating of reconstruction algo using Open Recon platform](#Exercise2)**<br>
 
 ## <a name='SetupEnvironment'></a>How to setup the Python environment
-USE THIS BINDER LINK: [![Binder](https://mybinder.org/badge_logo.svg)] (https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn/e5f14047d4a9b2de743ae00ae9191495df62a4a5?urlpath=lab%2Ftree%2FSiemens_Workshop_Demo.ipynb)
+### 👉USE THIS BINDER LINK: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn/e5f14047d4a9b2de743ae00ae9191495df62a4a5?urlpath=lab%2Ftree%2FSiemens_Workshop_Demo.ipynb)
 
-1.	Download the PyCharm community edition and install it.
-https://www.jetbrains.com/pycharm/download/?section=windows
-     * While installing PyCharm, please check the checkbox “Create Desktop Shortcut”.      
-![image](https://github.com/OpenAppsRecon/demo/assets/142770538/58ae3a7e-2892-4405-a9e2-879fb0427db4)
-
-
-
-2.	Download Python and install it. Remember the path where Python is installed.
-https://www.python.org/downloads/
-
-3. Open PyCharm by double-clicking on the icon (as shown below) on your desktop
-   ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/3047ddad-19fc-4c68-8cce-b7dfef8de40e)
-
-4. When the PyCharm is started the first time after installation, the following popup will appear.
-        Please click OK and continue
-   ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/58254e72-e9aa-4267-a1d2-27e23e97179d)
-
-5. PyCharm opens and it appears as shown below
-   
-     ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/57e82f8b-f37e-4706-9df7-0e2511b26473)
-
-6. Click on the button  ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/48018137-a52f-43cc-abd0-ed28e018b1b0) to open the project, below window appears
-
-7. Browse to the folder where you have downloaded the project from the Githut repository.
-    ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/821497c8-7a83-454f-818d-7483e1f2ecdc)
-    ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/937bafb2-a588-4a1c-8aba-cc1c27686ab6)
-    ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/6c3cb30d-6d0e-442a-9919-b63b8aea60ec)
-
-8. Open File->Setting->Python Interpreter
-   ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/abc0192f-0733-4ffb-b0c9-581f247b0755)
-
-   Point Python Interpreter toth directory where you have installed python.exe Step 2.
-9. Click on + symbole to add the following packages.
-    SimpleITK ,pydicom, numpy  ,matplotlib
-   ![image](https://github.com/OpenAppsRecon/demo/assets/142770538/68e95f54-4715-4a03-9de2-325ad1c9c76f)
-
-   
-   
-11.	Open helloworld/welcome.py and run file.
-
-12.	Now you can start with either of the two below exercises ([reconstruction](#Exercise2) or [postprocessing](#Exercise1)) based on your preference. 
-	
-
-Enjoy the session
 
 ### <a name='Exercise1'></a>Exercise 1: Integrating of post-processing algo using Open Apps platform
 1. Browse the folder 'OpenApps' in Project pane present to the left of your workspace.
