@@ -3,9 +3,9 @@
 **[How to setup the python environment](#SetupEnvironment)**<br>
 **[Exercise 1: Integrating of post-processing algo using Open Apps platform](#Exercise1)**<br>
 **[Exercise 2: Integrating of reconstruction algo using Open Recon platform](#Exercise2)**<br>
-
+**[Exercise 3: Using MONAI 3DSegResNet Model for segmentation on either given or user data.](#Exercise3)**<br>
 ## <a name='SetupEnvironment'></a>How to setup the Python environment
-### 👉USE THIS BINDER LINK: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn/e5f14047d4a9b2de743ae00ae9191495df62a4a5?urlpath=lab%2Ftree%2FSiemens_Workshop_Demo.ipynb)
+### 👉USE THIS BINDER LINK: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn.git/main?urlpath=%2Fdoc%2Ftree%2FSiemens_Workshop_Demo.ipynb)
 
 
 ### <a name='Exercise1'></a>Exercise 1: Integrating of post-processing algo using Open Apps platform
