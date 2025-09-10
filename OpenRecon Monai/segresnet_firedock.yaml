@@ -1,0 +1,31 @@
+# Only for inferencing
+checkpoint: /opt/code/python-ismrmrd-server/monai_seg_algos/segmodel_checkpoints/3Dsegresnet_monai_model.pth
+out_logs: /opt/code/python-ismrmrd-server/monai_seg_algos/segresnet_logs/
+inference_roi_size:
+- 128
+- 128
+- 64
+max_prediction_images_visualized: 20
+max_train_epochs: 50
+max_train_images_visualized: 20
+max_val_images_visualized: 20
+num_workers: 4
+roi_size:
+- 240
+- 240
+- 160
+seed: 0
+segresnet_model:
+  blocks_down:
+  - 1
+  - 2
+  - 2
+  - 4
+  blocks_up:
+  - 1
+  - 1
+  - 1
+  dropout_prob: 0.2
+  in_channels: 4
+  init_filters: 16
+  out_channels: 3
