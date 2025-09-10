@@ -1,0 +1,8 @@
+numpy
+matplotlib
+monai
+tqdm
+torch
+torchvision
+SimpleITK 
+pydicom

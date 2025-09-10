@@ -4,7 +4,18 @@
 **[Exercise 1: Integrating of post-processing algo using Open Apps platform](#Exercise1)**<br>
 **[Exercise 2: Integrating of reconstruction algo using Open Recon platform](#Exercise2)**<br>
 **[Exercise 3: Using MONAI 3DSegResNet Model for segmentation on either given or user data.](#Exercise3)**<br>
+**[Exercise 4: Integrate the MONAI 3DSegResNet Model in the reconstruction pipeline.](#Exercise4)**<br>
+
 ## <a name='SetupEnvironment'></a>How to setup the Python environment
+
+<br>If you want to setup in Google Colab!<br>
+
+1. Go to following link: https://drive.google.com/drive/folders/1OI0DyGY1caFL1WzLbdIVoohhtAEFDRzh?usp=sharing
+
+2. Add this line: !git clone https://github.com/arjunsiemens/OpenAppsRecon_HandsOn.git
+
+3. And pip install [if required!]: !pip install -r requirements.txt
+
 ### 👉USE THIS BINDER LINK: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn.git/main?urlpath=%2Fdoc%2Ftree%2FSiemens_Workshop_Demo.ipynb)
 
 
@@ -71,5 +82,6 @@
 
 ### <a name='Exercise4'></a>Exercise 4: [OpenRecon] Integrate the MONAI 3DSegResNet Model in the reconstruction pipeline.
 
-1. Reformat the code a/c to your requirements.
-2. Change the path and connection such that the recon pipeline works.
+1. Modify the code only in [monaiseg_firedock.py](https://github.com/arjunsiemens/OpenAppsRecon_HandsOn/blob/main/OpenRecon%20Monai/monaiseg_firedock.py) and [monaiseg_support.py](https://github.com/arjunsiemens/OpenAppsRecon_HandsOn/blob/main/OpenRecon%20Monai/monaiseg_support.py) a/c to your requirements.
+
+2. Once it works in your local system, send to the volunteers to deploy on the MRI scanner.
