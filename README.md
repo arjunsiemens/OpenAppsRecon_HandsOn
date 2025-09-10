@@ -63,8 +63,13 @@
 
 7. Once you have a working Python code (i.e., the modified recon_nparray.py), you can hand it over to anyone from Siemens team for integration and performance testing on open recon platform.
 
-### <a name='Exercise3'></a>Exercise 3: Using MONAI 3DSegResNet Model for segmentation on either given or user data.
+### <a name='Exercise3'></a>Exercise 3: [OpenApps] Using MONAI 3DSegResNet Model for segmentation on either given or user data.
 
 1. Run this command ["python.exe main.py -i data -o outputFolder -c configFolder"] to generate outputs via main.py.
 2. Update the main.py file a/c to your requirements.
 3. Give the data in proper DICOM format.
+
+### <a name='Exercise4'></a>Exercise 4: [OpenRecon] Integrate the MONAI 3DSegResNet Model in the reconstruction pipeline.
+
+1. Reformat the code a/c to your requirements.
+2. Change the path and connection such that the recon pipeline works.
