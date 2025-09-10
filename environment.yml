@@ -6,7 +6,6 @@ dependencies:
   - python=3.10
   - pytorch
   - torchvision
-  - cpuonly
   - monai
   - pip:
       - nibabel
