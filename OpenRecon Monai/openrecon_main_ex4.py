@@ -11,7 +11,6 @@ data = np.load(inp_path)
 """
 INFO.: INPUT Imgs shape:(S,H,W) and OUTPUT Labels shape:(B,C,H,W,S)
 """
-data = np.expand_dims(data, axis=0) 
 _, seg_labels = monai_segresnet_inf(data) #OUTPUT Labels shape:(S,H,W)
 
 #Making seg_labels shape same as input

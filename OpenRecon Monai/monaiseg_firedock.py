@@ -67,7 +67,7 @@ def monai_segresnet_inf(inf_datastack:np.ndarray):
   """
   mp.freeze_support()
   torch_device = "cpu" #Setting GPU device
-  yml_filepath = 'monai_seg_algos_openapps/monai_seg_algos/segresnet_firedock.yaml' #Setting yaml loc
+  yml_filepath = 'OpenRecon Monai/segresnet_firedock.yaml' #Setting yaml loc
   # Setting up for firedock_pipe_wrapper
   #Input Data Sanity Check
   if not isinstance(inf_datastack, np.ndarray):

@@ -1,6 +1,6 @@
 # Only for inferencing
-checkpoint: /opt/code/python-ismrmrd-server/monai_seg_algos/segmodel_checkpoints/3Dsegresnet_monai_model.pth
-out_logs: /opt/code/python-ismrmrd-server/monai_seg_algos/segresnet_logs/
+checkpoint: OpenRecon Monai/segmodel_checkpoints/3Dsegresnet_monai_model.pth
+out_logs: OpenRecon Monai/segresnet_logs
 inference_roi_size:
 - 128
 - 128
