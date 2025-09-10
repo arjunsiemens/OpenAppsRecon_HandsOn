@@ -1,13 +1,14 @@
-name: handsonvenv
+name: openappsrecon
+channels:
+  - pytorch
+  - conda-forge
 dependencies:
-  - python=3.9
-  - pip
+  - python=3.10
+  - pytorch
+  - torchvision
+  - cpuonly
+  - monai
   - pip:
-    - SimpleITK 
-    - numpy 
-    - pydicom 
-    - matplotlib
-    - pytorch
-    - torchvision
-    - cpuonly
-    - monai
+      - nibabel
+      - SimpleITK
+      - jupyter
