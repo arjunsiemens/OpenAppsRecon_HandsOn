@@ -1,0 +1,13 @@
+name: handsonvenv
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - SimpleITK 
+    - numpy 
+    - pydicom 
+    - matplotlib
+    - pytorch
+    - torchvision
+    - cpuonly
+    - monai
