@@ -7,14 +7,17 @@
 **[Exercise 4: Integrate the MONAI 3DSegResNet Model in the reconstruction pipeline.](#Exercise4)**<br>
 
 ## <a name='SetupEnvironment'></a>How to setup the Python environment
-
-<br>If you want to setup in Google Colab!<br>
-
+If you want to setup in Google Colab!
+<br>
 1. Go to following link: https://drive.google.com/drive/folders/1OI0DyGY1caFL1WzLbdIVoohhtAEFDRzh?usp=sharing
 
-2. Add this line: !git clone https://github.com/arjunsiemens/OpenAppsRecon_HandsOn.git
-
-3. And pip install [if required!]: !pip install -r requirements.txt
+2. Add these lines (Only in Colab): 
+   ```
+   !git clone https://github.com/arjunsiemens/OpenAppsRecon_HandsOn.git
+   %cd OpenAppsRecon_HandsOn #Only in Colab
+   !pip install -r requirements.txt
+   ```
+<br>
 
 ### 👉USE THIS BINDER LINK: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn.git/main?urlpath=%2Fdoc%2Ftree%2FSiemens_Workshop_Demo.ipynb)
 
