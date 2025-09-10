@@ -14,7 +14,7 @@ If you want to setup in Google Colab!
 2. Add these lines (Only in Colab): 
    ```
    !git clone https://github.com/arjunsiemens/OpenAppsRecon_HandsOn.git
-   %cd OpenAppsRecon_HandsOn #Only in Colab
+   %cd OpenAppsRecon_HandsOn
    !pip install -r requirements.txt
    ```
 <br>
