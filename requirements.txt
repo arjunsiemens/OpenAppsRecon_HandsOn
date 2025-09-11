@@ -4,3 +4,4 @@ monai
 tqdm
 SimpleITK 
 pydicom
+onnxruntime

@@ -57,7 +57,7 @@ def readDicomImages(in_dir):
     #Logger.info(flair_img.GetDirection())
     return flair_img, flair_series_reader
 
-def run_monai_segmentation(data,model_path = "model/monai_3dsegresnet_best.onnx"):        
+def run_monai_segmentation(data,model_path = "OpenApps Monai/seg_monai_iisc/model/monai_3dsegresnet_best.onnx"):        
     seg_monai = inf_monai.MONAISegResNetONNX(model_path)
     result_img = seg_monai.run_inf(data)  
     
