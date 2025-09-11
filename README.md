@@ -25,9 +25,10 @@ If you want to setup in Google Colab!
 
 > ### 👉USE THIS FOR HUGGING FACE SPACES🤗:
 1. Make your Hugging Face 🤗 account.
-2. Check out the model on Hugging Face 🤗: [Model Name](https://huggingface.co/spaces/arjunsiemens/siemens_open_innovation/tree/main?duplicate=true)
+2. Check out the model on Hugging Face 🤗: [Duplicate Model](https://huggingface.co/spaces/arjunsiemens/siemens_open_innovation/tree/main?duplicate=true)
 3. Duplicate this space to modify as per your requirements.
 4. You can specify your own space, specify a JUPYTER_TOKEN (like random password🤫) and select FREE storage (as of now).
+![image](https://raw.githubusercontent.com/arjunsiemens/OpenAppsRecon_HandsOn/refs/heads/main/Huggingface%20Duplicate.png)
 5. This build might take 5-10 mins. [Use Binder for Exercises 1 and 2 till it starts]
 
 > ### <a name='Exercise1'></a>Exercise 1: Integrating of post-processing algo using Open Apps platform
