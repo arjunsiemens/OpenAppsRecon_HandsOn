@@ -18,6 +18,7 @@ If you want to setup in Google Colab!
    %cd OpenAppsRecon_HandsOn
    !pip install -r requirements.txt
    ```
+3. Save a copy to your drive [File -> Save a copy to Drive] for adding modifications.
 <br>
 
 > ### 👉USE THIS BINDER LINK: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn.git/main?urlpath=%2Fdoc%2Ftree%2FSiemens_Workshop_Demo.ipynb)
@@ -26,6 +27,8 @@ If you want to setup in Google Colab!
 1. Make your Hugging Face 🤗 account.
 2. Check out the model on Hugging Face 🤗: [Model Name](https://huggingface.co/spaces/arjunsiemens/siemens_open_innovation/tree/main?duplicate=true)
 3. Duplicate this space to modify as per your requirements.
+4. You can specify your own space, specify a JUPYTER_TOKEN (like random password🤫) and select FREE storage (as of now).
+5. This build might take 5-10 mins. [Use Binder for Exercises 1 and 2 till it starts]
 
 > ### <a name='Exercise1'></a>Exercise 1: Integrating of post-processing algo using Open Apps platform
 1. Browse the folder 'OpenApps' in Project pane present to the left of your workspace.
@@ -83,12 +86,14 @@ If you want to setup in Google Colab!
 7. Once you have a working Python code (i.e., the modified recon_nparray.py), you can hand it over to anyone from Siemens team for integration and performance testing on open recon platform.
 
 > ### <a name='Exercise3'></a>Exercise 3: [OpenApps] Using MONAI 3DSegResNet Model for segmentation on either given or user data.
+Folder: 📂 OpenApps Monai
 
 1. Run this command ["python.exe main.py -i data -o outputFolder -c configFolder"] to generate outputs via main.py.
 2. Update the main.py file a/c to your requirements.
 3. Give the data in proper DICOM format.
 
 > ### <a name='Exercise4'></a>Exercise 4: [OpenRecon] Integrate the MONAI 3DSegResNet Model in the reconstruction pipeline.
+Folder: 📂 OpenRecon Monai
 
 1. Modify the code only in [monaiseg_firedock.py](https://github.com/arjunsiemens/OpenAppsRecon_HandsOn/blob/main/OpenRecon%20Monai/monaiseg_firedock.py) and [monaiseg_support.py](https://github.com/arjunsiemens/OpenAppsRecon_HandsOn/blob/main/OpenRecon%20Monai/monaiseg_support.py) a/c to your requirements.
 
