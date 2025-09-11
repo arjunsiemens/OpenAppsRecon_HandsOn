@@ -1,4 +1,6 @@
 > # Open research platform demo with hands-on session
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/arjunsiemens/OpenAppsRecon_HandsOn.git/main?urlpath=%2Fdoc%2Ftree%2FSiemens_Workshop_Demo.ipynb)   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/drive/folders/1OI0DyGY1caFL1WzLbdIVoohhtAEFDRzh?usp=sharing)   [![Open In Hugging Face](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-sm.svg)](https://huggingface.co/spaces/arjunsiemens/siemens_open_innovation/tree/main?duplicate=true)
+
 
 > ## Table of Contents
 >**[How to setup the python environment](#SetupEnvironment)**<br>
@@ -10,7 +12,7 @@
 >## <a name='SetupEnvironment'></a>How to setup the Python environment
 If you want to setup in Google Colab!
 <br>
-1. Go to following link: https://drive.google.com/drive/folders/1OI0DyGY1caFL1WzLbdIVoohhtAEFDRzh?usp=sharing
+1. Go to following link: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/drive/folders/1OI0DyGY1caFL1WzLbdIVoohhtAEFDRzh?usp=sharing)
 
 2. Add these lines (Only in Colab): 
    ```
